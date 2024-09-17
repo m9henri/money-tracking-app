@@ -1,8 +1,7 @@
 import os
 import time
-import main
 
-def start():
+def transaction():
     os.system("cls")
 
     transaction_type = input("Have you got or spent money? (+ or -): ")
@@ -19,9 +18,9 @@ def start():
     if final_answer == "Y":
         print("\nCongrats, you've made a change!")
         time.sleep(5)
-        main()
-    if final_answer == "n":
-        print("Ok we'll reset it for you in 5 seconds.")
-        time.sleep(5)
         start()
+    if final_answer == "n":
+        print("\nOk we'll reset it for you in 5 seconds.")
+        time.sleep(5)
+        transaction()
     return
