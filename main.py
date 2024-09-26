@@ -17,12 +17,20 @@ def transaction():
     final_answer = input()
     if final_answer == "Y":
         print("\nCongrats, you've made a change!")
+        writing(transaction_type, date, reason, heavyness)
         time.sleep(5)
         start()
     if final_answer == "n":
         print("\nOk we'll reset it for you in 5 seconds.")
         time.sleep(5)
         transaction()
+    return
+
+def writing(transaction_type, date, reason, heavyness):
+    file = open("tracker.log", "a")
+    file.write(f"Date: {date}\n")
+    file.write(f"Reason: {reason}\n")
+    file.write(f"How much spent/got: {transaction_type}{heavyness}\n\n")
     return
 
 def start():

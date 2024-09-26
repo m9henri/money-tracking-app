@@ -1,7 +1,7 @@
 open:
-    main tracker (transaction type, date, reason, how much)
     calculating from the tracker file
-    tracker.log
     converter
 
 done:
+    tracker.log
+    main tracker (transaction type, date, reason, how much)

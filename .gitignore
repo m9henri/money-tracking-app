@@ -1,2 +1,6 @@
 __pycache__/main.cpython-312.pyc
 __pycache__/MainTracker.cpython-312.pyc
+build
+dist
+start+tracker.spec
+ideas.txt
